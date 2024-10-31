@@ -1,0 +1,19 @@
+***********************************************************************************************
+* Programa CropSim
+* Dados da simula��o
+**********************************************************************************************
+* Nome do arquivo do solo
+Solo1.sol
+
+* Nome do arquivo da cultura
+Milho.crp
+
+* Arquivoa meteorol�gicoa
+2  !N�mero de arquivos
+Pira_013.met
+Pira_014.met
+
+* Dia Ordinal ("Juliano") do in�cio da simula��o
+300
+***********************************************************************************************
+* Fim do Arquivo

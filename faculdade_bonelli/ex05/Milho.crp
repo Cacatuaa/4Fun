@@ -1,0 +1,83 @@
+***********************************************************************************************
+* Programa CropSim
+* Arquivo com dados da cultura
+* Milho (Zea mays)
+***********************************************************************************************
+* Parte 1: Coeficiente da cultura Kc em fun��o do est�gio de desenvolvimento DVS (6 valores)
+KcDVS   Kc   Ze
+0.0    0.4    4
+0.3    0.8   20
+0.6    1.1   60
+1.0    1.2   80
+1.4    1.1   80
+2.0    0.9   80
+
+***********************************************************************************************
+* Parte 2 : Soma t�rmica
+800.0 ! Soma t�rmica da emerg�ncia at� antese (Tsum1)
+1320.0 ! Soma t�rmica da antese at� maturidade (Tsum2)
+6.0    ! Temperatura basal (Tb)
+
+***********************************************************************************************
+* Parte 3: Valores iniciais
+50.00   ! Massa seca total inicial [kg/ha] (MSi)
+0.048   ! IAF inicial [m2/m2] (IAFi)
+***********************************************************************************************
+* Parte 4: �rea foliar e ra�zes
+60.00    ! Vida �til das ra�zes em condi��es �timas [d] (VidaR)
+80.00    ! Vida �til das folhas em condi��es �timas [d] (VidaF)
+0.0029   ! �rea foliar espec�fica inicial [ha/kg] (SLA1)
+0.0021   ! �rea foliar espec�fica a partir da antese [ha/kg] (SLA2)
+***********************************************************************************************
+* Part 5: Assimila��o
+0.70 ! Coeficiente de extin��o (Kext)
+2.75 ! Radiation use efficiency [g/MJ] (RUE)
+
+* Taxa m�xima de assimila��o de CO2 AMAX [kg/ha/h] em fun��o de DVS (6 valores)
+DVS    AMAX 
+0.00   70.0
+1.00   70.0
+1.25   70.0
+1.50   63.0
+1.75   49.0
+2.00   21.0
+
+* Fator de redu��o de AMAX (Famax) em fun��o da temperatura m�dia (7 valores)
+Tmed   Famax
+9.0    0.05
+16.0   0.80
+18.0   0.94
+20.0   1.00
+30.0   1.00
+36.0   0.95
+42.0   0.56
+
+***********************************************************************************************
+* Parte 6: Convers�o de assimilados em biomassa (EC0..3)
+0.6800 ! Efici�ncia da convers�o em folhas [kg/kg]   (EC[0])
+0.6900 ! Efici�ncia da convers�o em ra�zes [kg/kg]   (EC[1])
+0.6580 ! Efici�ncia da convers�o em caule [kg/kg]    (EC[2])
+0.6710 ! Efici�ncia da convers�o em sementes [kg/kg] (EC[3])
+
+***********************************************************************************************
+* Parte 7: Respira��o de manuten��o a 20 �C  (fRM0..3)
+2.000   ! Aumento da taxa de respira��o por 10 graus de incremento na temperatura (Q10)
+0.030   ! Respira��o relativa de manuten��o das folhas [kgCH2O/kg/d] (fRM[0])
+0.015   ! Respira��o relativa de manuten��o das ra�zes [kgCH2O/kg/d] (fRM[1])
+0.015   ! Respira��o relativa de manuten��o dos caule  [kgCH2O/kg/d] (fRM[2])
+0.010   ! Respira��o relativa de manuten��o das sementes [kgCH2O/kg/d] (fRM[3])
+
+***********************************************************************************************
+* Parte 8: Parti��o : Fra��o do mat�ria seca total destinada �s folhas (F0), 
+                 ra�zes (F1), caule (F2) e sementes (F3) [kg/kg], em fun��o do FDVS (7 valores)
+FDVS   F0    F1    F2    F3
+0.0   0.42   0.35  0.23  0.0
+0.33  0.32   0.41  0.27  0.0
+0.88  0.07   0.14  0.79  0.0
+0.95  0.02   0.13  0.85  0.0
+1.1   0.0    0.1   0.4   0.5
+1.2   0.0    0.0   0.0   1.0
+2.1   0.0    0.0   0.0   1.0
+
+***********************************************************************************************
+* Fim do Arquivo

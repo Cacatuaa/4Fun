@@ -1,0 +1,3 @@
+Foram feitos dois programas, ambos com base no exercício proposto AP2 Programa_4: Biblioteca
+O arquivo AP2_programa4_alternativo.py mostra de forma simplificada o processo de empréstimo e devolução, exibindo erros caso exista.
+O arquivo AP2_programa4.py é um programa mais complexo que permite a interação do usuário com o programa. Neste é incluído uma opção extra de cadastro, tanto de usuários do tipo Professor ou Aluno, assim como Exemplares do tipo Livro ou Periódico.
